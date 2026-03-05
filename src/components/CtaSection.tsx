@@ -15,8 +15,8 @@ const CtaSection = () => {
             Join hundreds of California RCFE operators who trust EasyRCFE to run their facilities. Start your free trial today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="secondary" className="gap-2">
-              Start Free Trial <ArrowRight size={16} />
+            <Button size="lg" variant="secondary" className="gap-2" asChild>
+              <a href="https://easyrcfe.lovable.app">Start Free Trial <ArrowRight size={16} /></a>
             </Button>
             <Button size="lg" variant="outline" className="gap-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
               Schedule a Demo
