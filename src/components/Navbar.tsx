@@ -14,7 +14,7 @@ const Navbar = () => {
           <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Features</a>
           <a href="#benefits" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Benefits</a>
           <a href="#pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-          <Button size="sm">Get Started</Button>
+          <Button size="sm" asChild><a href="https://easyrcfe.lovable.app">Get Started</a></Button>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <a href="#features" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>Features</a>
           <a href="#benefits" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>Benefits</a>
           <a href="#pricing" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>Pricing</a>
-          <Button size="sm" className="w-fit">Get Started</Button>
+          <Button size="sm" className="w-fit" asChild><a href="https://easyrcfe.lovable.app">Get Started</a></Button>
         </div>
       )}
     </nav>

@@ -26,8 +26,8 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              <Button size="lg" className="gap-2">
-                Start Free Trial <ArrowRight size={16} />
+              <Button size="lg" className="gap-2" asChild>
+                <a href="https://easyrcfe.lovable.app">Start Free Trial <ArrowRight size={16} /></a>
               </Button>
               <Button size="lg" variant="outline" className="gap-2">
                 <Play size={16} /> Watch Demo
