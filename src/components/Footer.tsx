@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
-            <span className="font-heading text-xl text-primary">CareFlow</span>
+            <span className="font-heading text-xl text-primary">EasyRCFE</span>
             <p className="text-sm text-muted-foreground mt-1">RCFE management, simplified.</p>
           </div>
           <div className="flex gap-8 text-sm text-muted-foreground">
@@ -12,7 +12,7 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">Terms</a>
             <a href="#" className="hover:text-foreground transition-colors">Contact</a>
           </div>
-          <p className="text-xs text-muted-foreground">© 2026 CareFlow. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">© 2026 EasyRCFE. All rights reserved.</p>
         </div>
       </div>
     </footer>
