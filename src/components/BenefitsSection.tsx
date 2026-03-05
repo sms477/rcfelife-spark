@@ -16,10 +16,10 @@ const BenefitsSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-4">
-              Why operators choose CareFlow
+              Why operators choose EasyRCFE
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              We built CareFlow alongside RCFE operators in California to solve real problems — not just digitize paperwork.
+              We built EasyRCFE alongside RCFE operators in California to solve real problems — not just digitize paperwork.
             </p>
             <div className="space-y-4">
               {benefits.map((benefit) => (
@@ -33,7 +33,7 @@ const BenefitsSection = () => {
 
           <div className="bg-card rounded-2xl border border-border p-8 md:p-10 shadow-[var(--shadow-soft)]">
             <blockquote className="text-lg text-foreground leading-relaxed mb-6 italic">
-              "CareFlow transformed how we run our facility. What used to take hours of paperwork now happens automatically. Our staff can focus on residents instead of spreadsheets."
+              "EasyRCFE transformed how we run our facility. What used to take hours of paperwork now happens automatically. Our staff can focus on residents instead of spreadsheets."
             </blockquote>
             <div>
               <p className="font-medium text-foreground">Maria Gonzalez</p>

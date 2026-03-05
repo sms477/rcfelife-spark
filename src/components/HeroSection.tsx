@@ -22,7 +22,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              CareFlow streamlines resident management, compliance tracking, and staff coordination — so you can focus on what matters most: quality care.
+              EasyRCFE streamlines resident management, compliance tracking, and staff coordination — so you can focus on what matters most: quality care.
             </p>
             
             <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
@@ -42,7 +42,7 @@ const HeroSection = () => {
           
           <div className="relative animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <div className="rounded-xl overflow-hidden shadow-[var(--shadow-elevated)] border border-border">
-              <img src={heroImage} alt="CareFlow RCFE management dashboard" className="w-full h-auto" />
+              <img src={heroImage} alt="EasyRCFE management dashboard" className="w-full h-auto" />
             </div>
           </div>
         </div>

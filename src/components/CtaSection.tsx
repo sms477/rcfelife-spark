@@ -12,7 +12,7 @@ const CtaSection = () => {
             Ready to modernize your RCFE?
           </h2>
           <p className="text-primary-foreground/80 text-lg max-w-xl mx-auto mb-8">
-            Join hundreds of California RCFE operators who trust CareFlow to run their facilities. Start your free trial today.
+            Join hundreds of California RCFE operators who trust EasyRCFE to run their facilities. Start your free trial today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" variant="secondary" className="gap-2">
