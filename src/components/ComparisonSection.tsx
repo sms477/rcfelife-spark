@@ -52,7 +52,11 @@ const benefits = [
   },
 ];
 
-const ComparisonSection = () => {
+interface ComparisonSectionProps {
+  onTrialClick?: () => void;
+}
+
+const ComparisonSection = ({ onTrialClick }: ComparisonSectionProps) => {
   return (
     <section id="comparison" className="py-20 md:py-28">
       <div className="container mx-auto px-4">
