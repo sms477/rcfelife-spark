@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const CtaSection = () => {
+interface CtaSectionProps {
+  onTrialClick?: () => void;
+}
+
+const CtaSection = ({ onTrialClick }: CtaSectionProps) => {
   return (
     <section id="pricing" className="py-20 md:py-28">
       <div className="container mx-auto px-4">
@@ -15,8 +19,8 @@ const CtaSection = () => {
             Join hundreds of California RCFE operators who trust EasyRCFE to run their facilities. Start your free trial today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="secondary" className="gap-2" asChild>
-              <a href="https://easyrcfe.lovable.app">Start Free Trial <ArrowRight size={16} /></a>
+            <Button size="lg" variant="secondary" className="gap-2" onClick={onTrialClick}>
+              Start Free Trial <ArrowRight size={16} />
             </Button>
             <Button size="lg" variant="outline" className="gap-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
               Schedule a Demo
