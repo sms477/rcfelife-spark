@@ -52,7 +52,11 @@ const benefits = [
   },
 ];
 
-const ComparisonSection = () => {
+interface ComparisonSectionProps {
+  onTrialClick?: () => void;
+}
+
+const ComparisonSection = ({ onTrialClick }: ComparisonSectionProps) => {
   return (
     <section id="comparison" className="py-20 md:py-28">
       <div className="container mx-auto px-4">
@@ -172,10 +176,8 @@ const ComparisonSection = () => {
           <p className="text-muted-foreground max-w-xl mx-auto mb-6 leading-relaxed">
             We handle the heavy lifting. When you sign up for a trial, our team migrates your resident records, staff data, and billing history—<strong className="text-foreground">for free</strong>. Start fresh without the manual labor.
           </p>
-          <Button size="lg" className="gap-2" asChild>
-            <a href="https://easyrcfe.lovable.app">
+          <Button size="lg" className="gap-2" onClick={onTrialClick}>
               Start Your Free Trial <ArrowRight size={16} />
-            </a>
           </Button>
         </div>
       </div>

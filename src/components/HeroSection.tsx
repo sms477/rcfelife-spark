@@ -2,7 +2,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  onTrialClick?: () => void;
+}
+
+const HeroSection = ({ onTrialClick }: HeroSectionProps) => {
   return (
     <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
       {/* Subtle background gradient */}
@@ -26,8 +30,8 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              <Button size="lg" className="gap-2" asChild>
-                <a href="https://easyrcfe.lovable.app">Start Free Trial <ArrowRight size={16} /></a>
+              <Button size="lg" className="gap-2" onClick={onTrialClick}>
+                Start Free Trial <ArrowRight size={16} />
               </Button>
               <Button size="lg" variant="outline" className="gap-2">
                 <Play size={16} /> Watch Demo

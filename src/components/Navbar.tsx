@@ -2,7 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const Navbar = () => {
+interface NavbarProps {
+  onTrialClick?: () => void;
+}
+
+const Navbar = ({ onTrialClick }: NavbarProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -14,7 +18,7 @@ const Navbar = () => {
           <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Features</a>
           <a href="#benefits" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Benefits</a>
           <a href="#pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-          <Button size="sm" asChild><a href="https://easyrcfe.lovable.app">Get Started</a></Button>
+          <Button size="sm" onClick={onTrialClick}>Get Started</Button>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -27,7 +31,7 @@ const Navbar = () => {
           <a href="#features" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>Features</a>
           <a href="#benefits" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>Benefits</a>
           <a href="#pricing" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>Pricing</a>
-          <Button size="sm" className="w-fit" asChild><a href="https://easyrcfe.lovable.app">Get Started</a></Button>
+          <Button size="sm" className="w-fit" onClick={() => { setMobileOpen(false); onTrialClick?.(); }}>Get Started</Button>
         </div>
       )}
     </nav>
