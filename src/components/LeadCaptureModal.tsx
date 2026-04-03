@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, Loader2 } from "lucide-react";
 
 interface LeadCaptureModalProps {
-  open: boolean;
+  open: boolean
   onOpenChange: (open: boolean) => void;
 }
 
@@ -41,7 +41,7 @@ const LeadCaptureModal = ({ open, onOpenChange }: LeadCaptureModalProps) => {
     toast({ title: "You're in!", description: "Redirecting you to start your free trial..." });
     onOpenChange(false);
     setTimeout(() => {
-      window.location.href = "https://easyrcfe.lovable.app";
+      window.location.href = "https://app.rcfe.spencerstein.com";
     }, 1500);
   };
 
